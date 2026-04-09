@@ -1,1 +1,12 @@
-
+[
+ {
+  "name": "Player1",
+  "points": 150,
+  "completions": 3
+ },
+ {
+  "name": "Player2",
+  "points": 100,
+  "completions": 2
+ }
+]
