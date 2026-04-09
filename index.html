@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Button Page</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111;
+        font-family: Arial, sans-serif;
+    }
+
+    button {
+        padding: 20px 40px;
+        font-size: 24px;
+        border: none;
+        border-radius: 12px;
+        background: #5865F2;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(88,101,242,0.7);
+    }
+</style>
+</head>
+<body>
+
+<button onclick="openGif()">Click Me</button>
+
+<script>
+function openGif() {
+    window.open(
+        "https://cdn.discordapp.com/attachments/1456410150016389316/1491876057576509561/povjisoo-cat-tiktok-dancing.gif?ex=69d94959&is=69d7f7d9&hm=5a330fc27d515f2e3c0cfce2771716ddad81d6caa2bc1539622f0788e265bf41&",
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
