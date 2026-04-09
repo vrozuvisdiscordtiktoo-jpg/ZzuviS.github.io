@@ -1,3 +1,8 @@
+document.getElementById("submitForm").addEventListener("submit", e => {
+e.preventDefault();
+
+alert("Submission received! Moderator review required.");
+});
 fetch("data/challenges.json")
 .then(res => res.json())
 .then(data => {
