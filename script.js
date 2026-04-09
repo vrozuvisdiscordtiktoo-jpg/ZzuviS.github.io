@@ -1,21 +1,22 @@
-fetch("levels.json")
+fetch("data/challenges.json")
 .then(res => res.json())
 .then(data => {
 
 const list = document.getElementById("list");
 
-data.forEach((level, index) => {
+data.forEach(level => {
 
-const div = document.createElement("div");
-div.className = "challenge";
+const item = document.createElement("div");
+item.className = "challenge";
 
-div.innerHTML = `
-<h2>#${index+1} ${level.name}</h2>
+item.innerHTML = `
+<h2>#${level.rank} ${level.name}</h2>
 <p>Creator: ${level.creator}</p>
-<a href="${level.video}" target="_blank">Video</a>
+<p>Difficulty: ${level.difficulty}/10</p>
+<a href="${level.video}" target="_blank">Proof Video</a>
 `;
 
-list.appendChild(div);
+list.appendChild(item);
 
 });
 
